@@ -18,7 +18,7 @@ def index():
 
     # you can add your own routes here as needed
 @app.route("/generate",methods=['POST'])
-def predict():
+def generate():
     data = request.json
     return run_model(data.get('destination'),data.get('duration'),data.get('budget'),place,rating,model)
 
