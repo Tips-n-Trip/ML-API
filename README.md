@@ -9,8 +9,10 @@ cek koneksi
 ## POST http://localhost:80/generate
 isi dengan sebuah JSON 
 contoh:
-{
-"destination" : "Surabaya",
-"duration" : 2  // dalam hari
-"budget" : 500000
-}
+```
+{  
+"destination" : "Surabaya",  
+"duration" : 2  // dalam hari  
+"budget" : 500000  
+}  
+```
