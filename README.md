@@ -3,10 +3,10 @@
 
 
 # Penggunaan model-api
-GET http://localhost:80
+## GET http://localhost:80
 cek koneksi
 
-POST http://localhost:80/generate
+## POST http://localhost:80/generate
 isi dengan sebuah JSON 
 contoh:
 {
