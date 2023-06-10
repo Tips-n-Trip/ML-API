@@ -27,5 +27,5 @@ manual_scaling:
   instances: 1
 resources:
   cpu: 1
-  memory_gb: 1
-  disk_size_gb: 15
+  memory_gb: 0.6
+  disk_size_gb: 13
