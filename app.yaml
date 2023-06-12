@@ -13,6 +13,7 @@
 # limitations under the License.
 
 runtime: python
+service:mlmodel
 env: flex
 entrypoint: gunicorn -b :$PORT main:app
 
