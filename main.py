@@ -35,11 +35,6 @@ def recommend_places(city, budget, top_n=5): #top_n = wisata
     
     return output
 
-
-    
-
-    return
-
 @app.route("/")
 def index():
     return {"message":"API ready to use!"}
