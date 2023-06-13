@@ -45,7 +45,7 @@ def predict():
     return recommend_places(data.get('destination'),data.get('budget'),data.get('duration')*3)
 
 if __name__=="__main__":
-    app.run(port=80)
+    app.run(port=8080)
 
 
 
