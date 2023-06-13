@@ -15,7 +15,8 @@ app = Flask(__name__)
 
 def recommend_places(city, budget, top_n=5): #top_n = wisata
     # Filter the data based on the input city and budget
-    recommendations = data_model[(data_model['City'].str.contains(city, case=False, na=False)) & (data_model['Price'] <= budget)]
+    harga = data_model['Price'] * top_n
+    recommendations = data_model[(data_model['City'].str.contains(city, case=False, na=False)) & (harga <= budget)]
     
     # Calculate the absolute difference between the budget and the price, then sort the data based on this difference
     recommendations['abs_diff'] = abs(recommendations['Price'] - budget)
