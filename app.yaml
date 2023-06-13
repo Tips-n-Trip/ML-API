@@ -1,0 +1,7 @@
+runtime: python
+service: mlmodel
+env: flex
+entrypoint: gunicorn -b :$PORT main:app
+
+runtime_config:
+  operating_system: ubuntu22
